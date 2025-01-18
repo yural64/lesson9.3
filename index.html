@@ -36,6 +36,20 @@
             height: auto; /* Высота подстраивается пропорционально */
             object-fit: contain; /* Масштабируем изображение, не обрезая его */
         }
+
+        /* Стили для footer */
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -127,6 +141,73 @@
             </div>
         </div>
     </div>
+
+    <!-- Аккордеон -->
+    <div class="container my-5">
+        <div class="accordion" id="accordionExample">
+            <!-- Аккордеон 1 (Юлия Петрова) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Юлия Петрова
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Подробнее о Юлии Петровой. Этот раздел может содержать информацию о её достижениях, интересах и биографии.
+                    </div>
+                </div>
+            </div>
+            <!-- Аккордеон 2 (Денис Иванов) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Денис Иванов
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Подробнее о Денисе Иванове. Этот раздел может содержать информацию о его карьере, достижениях и интересах.
+                    </div>
+                </div>
+            </div>
+            <!-- Аккордеон 3 (Ольга Сидорова) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Ольга Сидорова
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Подробнее об Ольге Сидоровой. Этот раздел может содержать информацию о её карьере и жизни.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>О нас</h5>
+                    <p>Мы — команда профессионалов, которая помогает людям найти лучший путь к успеху. Мы предоставляем лучшие курсы и консультации, чтобы вы могли расти и развиваться.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+                    <p><strong>Email:</strong> info@example.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Социальные сети</h5>
+                    <p><a href="https://t.me/yourchannel" target="_blank">Telegram</a></p>
+                    <p><a href="https://vk.com/yourpage" target="_blank">VK</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
