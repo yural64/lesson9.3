@@ -112,29 +112,15 @@
 </head>
 <body>
     <!-- Навигационная панель -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Улыбка онлайн</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Переключатель навигации">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Статьи и истории</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Советы и лайфхаки</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Новости</a>
-                    </li>
-                </ul>
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                <a class="nav-link" href="#">Статьи и истории</a>
+                <a class="nav-link" href="#">Советы и лайфхаки</a>
+                <a class="nav-link" href="#">Новости</a>
+
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
                     <button class="btn btn-outline-success" type="submit">Поиск</button>
@@ -142,6 +128,7 @@
             </div>
         </div>
     </nav>
+
 
     <!-- Автоматический слайдер -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
